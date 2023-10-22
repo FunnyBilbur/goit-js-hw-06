@@ -23,6 +23,64 @@ button {
   cursor: pointer;
 }
 
-/* li{
+li{
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+img{
+  width: 360px;
+}
+
+.gallery{
+  display: grid;
+  padding: 0;
+  margin: 0;
+  /* grid-template: 2fr / 2fr; */
+
+
+  border: 2px solid rgb(80, 145, 27);
+  border-radius: 5px;
+  /* display: flex;
+  flex-flow: wrap;*/
+  justify-items: center;
+  
+}
+
+.gallery * {
+    border: 1px dashed; /* Обводим чёрным пунктиром */
+    border-radius: 10px; /* Скругляем углы на 10 пикселей */
+    background-color: rgba(82, 29, 179, 0.5); /* Фон красим фиолетовым */
+    text-align: center; /*Контент размещаем в центре по горизонтали */
+
+}
+
+@media screen and (min-width:360px) {
+  .gallery{
+    width: 150px;
+  }
+  }
+
+@media screen and (min-width:480px) {
+  .gallery{
+    width: 200px;
+  }
+  }
+
+@media screen and (min-width:720px) {
+  .gallery{
+    width: 420px;
+  }
+  }
+
+/* .image_item{
+margin-left: 30px;
 } */
+
+.image_item{
+margin-left: 15px;
+margin-right: 15px;
+margin-top: 5px;
+margin-bottom: 5px;
+}

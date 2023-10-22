@@ -3,4 +3,13 @@
 
 const categories_counter = document.querySelector("#categories");
 console.dir(categories_counter);
-console.log("Total is: ", categories_counter.children.length);
+console.log("Number of categories: ", categories_counter.children.length);
+
+[...categories_counter.children].forEach((item) => {
+    console.log("");
+    console.log("Category: ", item.firstElementChild.innerText);
+    console.log('Elements:', item.lastElementChild.children.length);
+
+});
+
+
